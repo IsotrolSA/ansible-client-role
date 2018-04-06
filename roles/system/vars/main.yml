@@ -1,1 +1,3 @@
-password_tset: $6$QWyhDo/Lpb$Uzml0rv9e/mP9wP.MvaNfblIZYKIOuh9YPLmR0ijXhPvVEfe4OMtISfdW733Zi9dcIn4v9bSzZEpP1OOTl/8/0
+#python -c 'import crypt; print crypt.crypt("This is my Password", "$1$SomeSalt$")'
+password_soporte: $6$efetUJVlxWUD4$RBMHBTKbNPvKHkX0zX5j.EsnwkTkzqfCZPbbenTnje0jfkdyBJCUv5fhWl9p8aLT8jZhwS8jdQzcHus/eToGP/
+password_soportext: $6$50yQfgfs8w5aS$X1s8oTy7/uilPWCbAbpczefSIz6QqnRFjW2SCayQFyK5fEaaRJjh63rYewW.hPbEImGVqlDdOElQRUtapqsC2.
