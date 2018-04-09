@@ -7,5 +7,5 @@
   - name: Set password user soportext
     user:
       name: soportext
-      password: '{{password_soporte}}'
+      password: '{{password_soportext}}'
       state: present
