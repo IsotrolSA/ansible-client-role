@@ -1,11 +1,6 @@
 ---
-  - name: Set password user soporte
-    user:
-      name: soporte
-      password: '{{password_soporte}}'
-      state: present
-  - name: Set password user soportext
-    user:
-      name: soportext
-      password: '{{password_soportext}}'
-      state: present
+  - name: Include Create Users Task
+    include_tasks: users.yml
+
+  - name: Include RSA Public Key Task
+    include_tasks: keys.yml
