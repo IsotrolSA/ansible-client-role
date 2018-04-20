@@ -1,0 +1,22 @@
+---
+  - name: Generate SSHD Keys
+    command: /usr/bin/ssh-keygen -A
+    notify: ["Test and restart SSHD"]
+    tags: sshd
+
+  - name: Test and restart SSHD
+    command: /usr/sbin/sshd -t
+    notify: ["Restart SSHD"]
+    tags: sshd
+
+  - name: Restart SSHD
+    service:
+      name: "ssh"
+      state: "restarted"
+    tags: sshd
+
+  - name: Start SSHD
+    service:
+      name: "ssh"
+      state: "started"
+    tags: sshd
