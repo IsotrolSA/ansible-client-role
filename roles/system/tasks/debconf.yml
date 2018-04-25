@@ -1,0 +1,13 @@
+---
+  - name: Accept oracle license "Select"
+    debconf:
+      name: oracle-java8-installer
+      question: shared/accepted-oracle-license-v1-1
+      value: 'true'
+      vtype: select
+  - name: Accept oracle license "Seen"
+    debconf:
+      name: oracle-java8-installer
+      question: shared/accepted-oracle-license-v1-1
+      value: 'true'
+      vtype: seen
