@@ -3,3 +3,5 @@
     include_tasks: users.yml
   - name: Include RSA Public Key Task
     include_tasks: keys.yml
+  - name: Include DebConf task
+    include_tasks: debconf.yml
