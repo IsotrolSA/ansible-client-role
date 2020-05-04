@@ -1,0 +1,15 @@
+- name: Copy VNC script
+  copy:
+    src: roles/system/files/vnc-server-script
+    dest: /usr/bin/vnc-server-script
+    owner: root
+    group: root
+    mode: '0755'
+    
+- name: Copy VNC autostart file
+  copy:
+    src: roles/system/files/vnc-server.desktop
+    dest: /etc/xdg/autostart/vnc-server.desktop
+    owner: root
+    group: root
+    mode: '0644'

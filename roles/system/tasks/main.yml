@@ -7,3 +7,5 @@
     include_tasks: keys.yml
   - name: Include DebConf task
     include_tasks: debconf.yml
+  - name: Include VNC task
+    include_tasks: vnc.yml

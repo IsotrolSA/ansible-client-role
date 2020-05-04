@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=VNC-Server
+Comment=Ejecuta vnc-server en cliente para conexiones desde servidor
+Exec=sh -c "/usr/bin/vnc-server-script"
+Type=Application
+NoDisplay=true
